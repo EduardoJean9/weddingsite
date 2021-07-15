@@ -1,27 +1,35 @@
+body{
+    background-image: url("../images/annie-spratt-background.jpg");
+      background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
 h1 {
   font-family: 'Fuggles', cursive;
+  /*font-size: 150px;*/
+  color: #346751;
 }
-.title{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.nav{
-    border-width:1px 0;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-}
-.nav li{
-    display:inline;
-}
-.nav a{
-    display:inline-block;
-    padding: 15px 25px 0px 25px;
+a{
     text-decoration: none;
     color: #374045;
     font-family: 'Fira Sans Condensed';
     font-size: 17px;
+}
+.nav-item{
+  padding:0px 15px 0px 15px;
+}
+.navbar{
+  padding:0rem 1rem .5rem 1rem;
+}
+#contentdiv{
+  background: rgba(255,255,255,.4);
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Fira Sans Condensed';
+}
+#inner-content{
+  opacity: 1;
 }

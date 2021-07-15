@@ -15,27 +15,36 @@
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   </head>
   <body>
-  		<div class="bg-image" style="background-image: url("../images/annie-spratt-background.jpg");
-            height: 100vh">
 	<div>
-		<h1 class = "text-center">The Jean Wedding</h1>
+		<h1 class = "display-1 text-center">The Jean Wedding</h1>
 	</div>
+	<nav class="navbar navbar-expand-sm navbar-light">
+	    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+	            <ul class="navbar-nav">
+	                <li class="nav-item {% if nbar == 'home' %}active{% endif %}">
+	                    <a class="nav-link" href="/">Home</a>
+	                </li>
+	                <li class="nav-item {% if nbar == 'rsvp' %}active{% endif %}">
+	                    <a class="nav-link" href="/rsvp/">RSVP</a>
+	                </li>
+	                <li class="nav-item {% if nbar == 'details' %}active{% endif %}">
+	                    <a class="nav-link" href="/details/">Details</a>
+	                </li>
+	                <li class="nav-item {% if nbar == 'honeymoon' %}active{% endif %}">
+	                    <a class="nav-link" href="/honeymoon/">Honeymoon</a>
+	                </li>
+	                <li class="nav-item {% if nbar == 'photos' %}active{% endif %}">
+	                    <a class="nav-link" href="/photos/">Photos</a>
+	                </li>
+	            </ul>
+	    </div>
+	</nav>
 
-
-	<ul class="nav">
-	  <li><a href="/">Home</a></li>
-	  <li><a href="/rsvp/">RSVP</a></li>
-	  <li><a href="/details/">Details</a></li>
-	  <li><a href="/honeymoon/">Honeymoon</a></li>
-	  <li><a href="/photos/">Photos</a></li>
-	</ul>
-
-    <div class="container">
+    <div class="" id="contentdiv">
     {% block body_block %}
     {# Anything outside of this will be inherited if you use extend.#}
     {% endblock %}
     </div>
-	</div>
   </body>
 </html>
 
