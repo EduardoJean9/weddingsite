@@ -1,15 +1,5 @@
-html {
- background-image: url("../images/annie-spratt-background.jpg");
- background-size: 100% 100% ;
- background-repeat: no-repeat;
- margin: 0;
- height: 100%;
-}
 h1 {
   font-family: 'Fuggles', cursive;
-  font-size: 150px;
-  color: #346751;
-  margin: 25px 0px 0px 0px;
 }
 .title{
   display: flex;
@@ -34,9 +24,4 @@ h1 {
     color: #374045;
     font-family: 'Fira Sans Condensed';
     font-size: 17px;
-}
-.content{
-  height: 120px;
-  width:120px;
-  background-color: white;
 }
